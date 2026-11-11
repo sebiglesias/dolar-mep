@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Dólar MEP Hoy — Cotización, Comisiones y Parking</title>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#059669">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="description" content="Calculá cuántos dólares MEP recibís en tu cuenta bancaria en tiempo real. Estimá comisiones de broker, derechos de mercado BYMA, parking regulatorio y ahorro frente al dólar tarjeta y blue.">
+  <meta name="keywords" content="calculadora dolar mep, dolar mep hoy cotizacion, comisiones broker mep, cuanto me sale comprar dolar mep, parking mep 2026, dolar bolsa">
+  <link rel="canonical" href="https://sebiglesias.com.ar/dolar-mep/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora Dólar MEP Hoy — Cotización y Comisiones en Vivo">
+  <meta property="og:description" content="Conocé exactamente cuántos dólares netos recibís al comprar Dólar MEP tras comisiones de bolsa.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/dolar-mep/">
+  <meta property="og:site_name" content="Calculadora Dólar MEP">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora Dólar MEP Hoy">
+  <meta name="twitter:description" content="Cotización en tiempo real y cálculo exacto de comisiones y dólares recibidos.">
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora Dólar MEP Hoy",
+    "url": "https://sebiglesias.com.ar/dolar-mep/",
+    "description": "Herramienta online para calcular compras y ventas de Dólar MEP con comisiones y parking regulatorio en Argentina.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "ARS"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Sebastián Iglesias",
+      "url": "https://sebiglesias.com.ar"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el Dólar MEP o Dólar Bolsa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El Dólar MEP (Mercado Electrónico de Pagos) es una operación legal y transparente que consiste en comprar un bono soberano argentino (como el AL30 o GD30) en pesos y, tras cumplir un plazo de espera regulatorio (parking), venderlo en dólares en la bolsa local."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el parking y cuánto dura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El parking es el tiempo mínimo fijado por la Comisión Nacional de Valores (CNV) durante el cual el inversor debe mantener el bono en cartera antes de poder venderlo contra dólares. Para bonos soberanos bajo ley local (ej. AL30) es de 1 día hábil (24 horas)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay límite mensual para comprar Dólar MEP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No existe un tope de 200 dólares como ocurría con el cupo solidario bancario. Se puede comprar el monto en dólares que permita la justificación patrimonial y de ingresos lícitos del comprador."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué comisiones se cobran en la operación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Se abonan dos comisiones: la del broker o sociedad de bolsa (habitualmente entre 0% y 0.6% por operación de compra y de venta) y los derechos de mercado oficiales de BYMA (Bolsas y Mercados Argentinos), que son del 0.01%."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="https://sebiglesias.com.ar/" class="back-link">
+        ← Volver a sebiglesias.com.ar
+      </a>
+      <div id="market-status" class="market-status-pill closed">
+        <span class="status-dot"></span> Verificando mercado...
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="header">
+      <div class="badge-tag">📈 Finanzas e Inversiones Argentina</div>
+      <h1 class="title">Calculadora Dólar MEP Hoy</h1>
+      <p class="subtitle">Calculá cuántos dólares recibís en mano en tu caja de ahorro, con cotización en tiempo real, comisiones de broker y parking.</p>
+    </section>
+
+    <!-- Cotizaciones Ticker Bar -->
+    <section class="quotes-ticker-bar" aria-label="Cotizaciones de referencia">
+      <div class="quote-pill active-mep">
+        <div class="name">MEP Venta</div>
+        <div id="ticker-mep" class="val">$1.587,90</div>
+      </div>
+      <div class="quote-pill">
+        <div class="name">Dólar Blue</div>
+        <div id="ticker-blue" class="val">$1.555,00</div>
+      </div>
+      <div class="quote-pill">
+        <div class="name">Dólar Tarjeta</div>
+        <div id="ticker-tarjeta" class="val">$2.041,00</div>
+      </div>
+      <div class="quote-pill">
+        <div class="name">Oficial Minorista</div>
+        <div id="ticker-oficial" class="val">$1.570,00</div>
+      </div>
+    </section>
+
+    <!-- Main Card -->
+    <section class="card" aria-label="Calculadora de conversión">
+      <!-- Mode segmented switcher -->
+      <div class="mode-segmented" role="group">
+        <button type="button" class="mode-btn active" data-mode="buy">
+          💵 Invertir Pesos (Comprar MEP)
+        </button>
+        <button type="button" class="mode-btn" data-mode="sell">
+          🔄 Vender Dólares por Pesos
+        </button>
+        <button type="button" class="mode-btn" data-mode="target">
+          🎯 Quiero X Dólares
+        </button>
+      </div>
+
+      <!-- Amount Input -->
+      <div class="form-group">
+        <label id="input-amount-label" for="input-amount" class="form-label">
+          Monto en Pesos a Invertir (ARS)
+        </label>
+        <div class="input-with-currency">
+          <span id="input-currency-symbol" class="currency-symbol">$</span>
+          <input type="number" id="input-amount" class="form-input-lg" min="1" step="1000" value="500000">
+        </div>
+      </div>
+
+      <!-- Broker Fee Selector & Chips -->
+      <div class="form-group">
+        <label for="input-broker-fee" class="form-label">
+          <span>Comisión del Broker (%)</span>
+          <span style="font-size: 0.8rem; font-weight: 500; color: #64748b;">+ 0.01% derechos BYMA</span>
+        </label>
+        <div class="broker-chips" role="group" aria-label="Presets de comisiones">
+          <button type="button" class="broker-chip" data-fee="0.0">Cocos (0%)</button>
+          <button type="button" class="broker-chip active" data-fee="0.5">Balanz / IOL (0.5%)</button>
+          <button type="button" class="broker-chip" data-fee="0.6">Ualá / Finanzas (0.6%)</button>
+          <button type="button" class="broker-chip" data-fee="1.0">Bancos Tradicionales (1.0%)</button>
+        </div>
+        <input type="number" id="input-broker-fee" class="form-input-lg" style="font-size: 1rem; padding: 0.6rem 1rem; margin-top: 0.5rem;" min="0" max="3" step="0.05" value="0.5">
+      </div>
+    </section>
+
+    <!-- Main Result Hero -->
+    <section class="result-hero" aria-live="polite">
+      <div id="res-hero-label" class="hero-label">Dólares Netos en Mano</div>
+      <div id="res-hero-amount" class="hero-amount">US$ 313,29</div>
+      <div id="res-hero-sub" class="hero-sub">Acreditación estimada tras parking (1 día hábil)</div>
+
+      <div class="hero-meta-row">
+        <div class="hero-meta-item">
+          <span class="label">Tipo de Cambio Efectivo</span>
+          <span id="res-effective-rate" class="val">$1.595,98</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Comisión Broker</span>
+          <span id="res-broker-fee-rate" class="val">0.50%</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Parking Requerido</span>
+          <span id="res-parking-time" class="val">24 hs hábiles</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Savings Callout -->
+    <div id="savings-comparison-card" class="comparison-card" style="display: none;">
+      <!-- Populated via JS -->
+    </div>
+
+    <!-- Cost Breakdown Card -->
+    <section class="card">
+      <h2 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.75rem;">
+        Desglose Detallado de la Operación
+      </h2>
+      <table class="breakdown-table">
+        <tbody>
+          <tr>
+            <td>Cotización Base del Bono (AL30 / GD30)</td>
+            <td id="row-mep-base">$1.587,90</td>
+          </tr>
+          <tr>
+            <td>Comisión Sociedad de Bolsa (Broker)</td>
+            <td id="row-broker-fee">$2.500</td>
+          </tr>
+          <tr>
+            <td>Derechos de Mercado (BYMA / CNV 0.01%)</td>
+            <td id="row-byma-fee">$50</td>
+          </tr>
+          <tr style="border-top: 2px solid var(--border);">
+            <td><strong>Tipo de Cambio Final por Dólar</strong></td>
+            <td id="row-effective-rate" style="color: var(--primary-hover); font-size: 1.1rem;">$1.595,98</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="faq-title">Preguntas Frecuentes sobre el Dólar MEP</h2>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Qué es el Dólar MEP o Dólar Bolsa?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          El Dólar MEP (Mercado Electrónico de Pagos) es una vía legal, en blanco e ilimitada para adquirir moneda extranjera en Argentina. Consiste en adquirir un título público en pesos (comúnmente el bono AL30) en el mercado bursátil y luego venderlo en su especie D (AL30D), liquidando los dólares resultantes directamente en tu cuenta bancaria.
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Qué es el 'parking' y por qué existe?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          El parking es una restricción fijada por la CNV que obliga al comprador a mantener el bono en su comitente durante 24 horas hábiles antes de poder ejecutar la orden de venta en dólares. Durante ese día hábil el precio del bono puede fluctuar levemente, lo que puede generar una pequeña variación entre la cotización estimada y la liquidación final.
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Dónde se depositan los dólares una vez hecha la compra?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Los dólares se acreditan en tu cuenta comitente del broker o billetera virtual. Por normativa del Banco Central (BCRA), luego podés transferirlos sin costo alguno a tu Caja de Ahorro en Dólares de cualquier banco tradicional o digital (CBU en USD a tu mismo nombre).
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Tiene límite mensual como el cupo de 200 dólares?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          No. El Dólar MEP no tiene el cupo mensual restrictivo de 200 dólares que existía en el dólar ahorro solidario bancario. Podés comprar la cantidad de dólares que desees, siempre que tus ingresos declarados y fondos en blanco respalden la operación ante los requerimientos de cumplimiento de tu broker.
+        </div>
+      </article>
+    </section>
+
+    <!-- Cross Sell Microapps -->
+    <section class="cross-sell">
+      <h3>Otras herramientas financieras de Sebastián Iglesias</h3>
+      <div class="cross-grid">
+        <a href="https://sebiglesias.com.ar/dolar-tarjeta/" class="cross-card">
+          <span class="cross-icon">💳</span>
+          <div class="cross-info">
+            <strong>Dólar Tarjeta</strong>
+            <span>Cotización con percepciones e impuestos</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/billeteras/" class="cross-card">
+          <span class="cross-icon">📱</span>
+          <div class="cross-info">
+            <strong>Rendimiento Billeteras</strong>
+            <span>Tasas MP, Naranja X, Personal Pay</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/plazo-fijo/" class="cross-card">
+          <span class="cross-icon">🏦</span>
+          <div class="cross-info">
+            <strong>Plazo Fijo Tradicional</strong>
+            <span>Simulador de intereses y TNA bancaria</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/cuotas/" class="cross-card">
+          <span class="cross-icon">🏷️</span>
+          <div class="cross-info">
+            <strong>¿Cuotas o Contado?</strong>
+            <span>Calculadora con inflación futura</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/sueldo-neto/" class="cross-card">
+          <span class="cross-icon">💵</span>
+          <div class="cross-info">
+            <strong>Sueldo Bruto a Neto</strong>
+            <span>Calculadora de haberes en blanco</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/monotributo/" class="cross-card">
+          <span class="cross-icon">🧾</span>
+          <div class="cross-info">
+            <strong>Escalas Monotributo</strong>
+            <span>Topes de facturación y categorías</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Calculadora Dólar MEP — Desarrollado por <a href="https://sebiglesias.com.ar">Sebastián Iglesias</a>.</p>
+    <p style="margin-top: 0.25rem; font-size: 0.75rem;">Cotizaciones en tiempo real provistas por AR Data API. Los valores son estimativos y no constituyen asesoramiento financiero profesional.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mepBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#mepBg)"/>
+  
+  <!-- Outer Ring Card -->
+  <circle cx="256" cy="256" r="160" fill="#ffffff" filter="drop-shadow(0 14px 28px rgba(0,0,0,0.25))"/>
+  
+  <!-- Candlestick / Chart Bars in background of circle -->
+  <rect x="160" y="240" width="16" height="70" rx="4" fill="#d1fae5"/>
+  <rect x="195" y="200" width="16" height="110" rx="4" fill="#a7f3d0"/>
+  <rect x="300" y="180" width="16" height="130" rx="4" fill="#6ee7b7"/>
+  <rect x="335" y="160" width="16" height="150" rx="4" fill="#34d399"/>
+
+  <!-- Centered Bold Dollar Symbol -->
+  <text x="256" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="150" font-weight="900" fill="#047857" text-anchor="middle">$</text>
+
+  <!-- Exchange / Sync badge -->
+  <circle cx="370" cy="370" r="65" fill="#0284c7" stroke="#ffffff" stroke-width="8"/>
+  <path d="M345 360 L370 340 L395 360 M395 380 L370 400 L345 380" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

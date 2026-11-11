@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora Dólar MEP Hoy — Cotización, Comisiones y Parking",
+  "short_name": "Calculadora MEP",
+  "description": "Calculá cuántos dólares MEP recibís por tus pesos en tiempo real, con comisiones de broker, derechos de mercado BYMA y comparativa frente al dólar tarjeta y blue.",
+  "start_url": "/dolar-mep/",
+  "display": "standalone",
+  "background_color": "#047857",
+  "theme_color": "#059669",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
